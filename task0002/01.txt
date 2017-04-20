@@ -1,0 +1,7 @@
+中国高等教育学生信息网（学信网）
+http://www.chsi.com.cn/
+
+
+
+问题：1.所有命名为main clearfix的div右侧与右下侧完全空白，影响浏览体验
+      2.第一个main clearfix的div中，电子政务平台与要闻应该是并列内容，却同放在一起

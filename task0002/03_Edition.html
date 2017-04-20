@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03_Edition</title>                    <!--只截取html部分，重写原代码第52行至第88行 -->
+</head>
+<body>
+	<div class="name">
+	    <label for="name"><b>您的姓名</b></label>
+		<input id="name" type="text" name="name" placeholder="请输入您的名字" autofocus>
+	</div>
+	<hr>
+	<div class="province">
+	    <label><b>所在城市</b></label>
+	    <select name="province">
+	        <option selected>选择省份</option>
+			<option>A</option>
+			<option>B</option>
+			<option>C</option>
+			<option>D</option>
+			<option>E</option>
+			<option>F</option>
+			<option>G</option>
+		</select>
+	</div>
+    <span>若您的城市不在该下拉框内，暂无法在线申请</span>
+    <hr>
+    <div class="ddl">
+    	<label><b>证件类型</b></label>
+    	<select name="ddl">
+    		<option value="0">身份证</option>
+    		<option value="1">护照</option>
+    		<option value="2">港澳居民来往内地通行证</option>
+    		<option value="3">台湾同胞来往内地通行证（台胞证）</option>
+    		<option value="4">军官证</option>
+    		<option value="5">士兵证</option>
+    		<option value="6">警官证</option>
+            <option value="7">其他</option>
+        </select>
+        <label for="numberer"><b>证件号码</b></label>
+        <input type="text" id="numberer" name="numberer" placeholder="请输入您的证件号码" pattern="\d{18}">
+    </div>
+    <span>未持卡客户可以通过您的身份证来申办信用卡</span>
+    <hr>
+</body>
+</html> 

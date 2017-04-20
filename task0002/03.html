@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 只截取html部分，源网页https://creditcardapp.bankcomm.com/applynew/front/apply/new/identity.html -->
+<head>                         <!-- 已添加部分img的alt属性，重写原代码第52行至第88行于03_Edition -->
+    <meta charset="UTF-8">
+	<title>03</title>
+</head>
+<body onunload="">
+	<div id="header">
+		<div class="clearfix" id="logo">
+			<h1 class="fl"></h1>
+			<h2 class="fr"></h2>
+		</div>
+	</div>
+	<div id="logolink"></div>
+
+	<link type="text/css" rel="stylesheet" href="/applynew/assets/pc/css/radioColor.css?v=v1.11.2.20150530" />
+	<link type="text/css" rel="stylesheet" href="/applynew/assets/pc/css/dyDialog.css?v=v1.11.2.20150530" />
+	<link rel="stylesheet" type="text/css" href="/applynew/assets/mobile/css/graytest/popupTip.css">
+	<script src="/applynew/assets/pc/js/cardapply/page.js/pcDialog.js?v=v1.11.2.20150530" type="text/javascript"></script>
+<!--[if  gte IE 8]>
+	<link type="text/css" rel="stylesheet" href="/applynew/assets/pc/css/radioColorIE.css?v=v1.11.2.20150530" />
+	<![endif]-->
+	<div class="overlayPreCheck" style="position: fixed;display: none;">
+		<div class="loader" id="loader">
+			我们正在为您处理，感谢您的耐心等待……
+		</div>
+	</div> 
+	<section class="main clearfix">
+		<form action="/applynew/front/apply/new/personalInfo.html" method="post"
+		id="mrm_quickform">
+		<input type="hidden" name="trackCode" value="" id="pccc_trackCode"/>
+		<input type="hidden" name="cimCode" value="" id="pccc_cimCode"/>
+		<input type="hidden" name="recomType" value="" id="pccc_recomType_put"/>
+		<input type="hidden" name="recomNumber" value="" id="pccc_recomNum_put"/>
+		<input type="hidden" name="recomChannelType" value="" id="pccc_recomChannelType_put"/>
+		<input type="hidden" name="userparam1" value=""/>
+		<input type="hidden" name="userparam2" value=""/>
+		<input type="hidden" name="userparam3" value=""/>
+		<input type="hidden" value="" id="pccc_actMember" />
+		<input type="hidden" name="mobileNo" value="" >
+		<input type="hidden"  value="" id="cityId"/>
+		<input type="hidden"  value="" id="provId"/>
+		<input type="hidden" name="entryCardId" value="" id="entryCardId"/>
+		<input type="hidden"  value="1" id="IsSupportPlatinum"/>
+		<input type="hidden"  value="" id="pccc_isEnjoyLoan"/>
+		
+		<section class="siderMain fl">
+			<h3 class="mainTitle noborder">尊敬的客户</h3>
+			<div class="mainTitleTip">
+				请您填写如下资料，以便我们为您选择最快捷的申请通道。<em>新客户在线申请暂只面对持二代身份证的客户开放。</em>
+			</div>
+			<div class="container">
+				<table width="525" class="mainTable quickTable"
+				id="pccc_baseContent">
+				<tr>
+					<th>您的姓名</th>
+					<th>所在城市</th>
+				</tr>
+				<tr>
+					<td><input id="mrm_txtName" name="applyName" monitor type="text" value="请输入您的姓名"
+						class="text" maxlength="30" autofocus></td>
+						<td id="mrm_tdCity"><select name="provinceId" monitor
+							id="mrm_ddlProvince" class="select selectW102 prov">
+							<option selected="selected">选择省份</option>
+						</select> <select name="cityId" id="mrm_ddlCity" monitor
+						class="select selectW115 city" disabled="disabled">
+						<option selected="selected">选择市/地区</option>
+						<option>上海</option>
+					</select>
+					<span msg="请确认您所在城市与现在居住地或工作单位所在城市一致。" class="icons blueTipIcon" moreinfo="new_customer/new_2/new_city"></span>
+					<span class="textTip">若您的城市不在该下拉框内，暂无法在线申请</span>
+				    </td>
+			    </tr>
+			    <tr>
+				    <th>证件类型</th>
+				    <th>证件号码</th>
+			    </tr>
+			    <tr>
+				    <td>
+					<select id="mrm_ddlCredentialsType" name="certType" class="select" monitor="true" > <option value="0">身份证</option><option value="1">护照</option><option value="2">港澳居民来往内地通行证</option><option value="3">台湾同胞来往内地通行证（台胞证）</option><option value="4">军官证</option><option value="5">士兵证</option><option value="6">警官证</option><option value="8">其他</option></select>
+					<span class="icons blueTipIcon" msg="未持卡客户可以通过您的身份证来申办信用卡。" moreinfo="new_customer/new_2/new_certType"></span>
+					</td>
+					<td><input id="mrm_txtCredentialsNo" name="certNo"
+						type="text" class="text" maxlength="20" value="" monitor>
+					</td>
+				</tr>
+				</table>
+			</div>
+				<div class="quality" id="pccc_platinum_info">
+					<input id="new_platinum_checkbox" type="checkbox" value="checkbox" name="new_platinum_checkbox" class="checkbox buriedpoint"  checked/><span>请勾选，如您符合相关资质，将为您核发白金卡。</span>
+					<img src="/applynew/front/apply/imgShow.html?uuid=afec95f1-cd03-4dbe-871c-77b843c66860" id="platinumImg" alt="白金卡图案">
+				</div>
+
+				<div class='pccc_platinumTips'  >
+					<div class='pccc_platinumTip1' style='display: block'>*如您选择申办各类联名卡金卡/普卡，并勾选同意在符合条件的情形下核发白金卡，若最终我行为您核发白金卡的，则您将无法再享受所选联名卡金卡/普卡的相关权益.. <a class='blue'>查看详情</a></div>
+					<b class='pccc_platinumTip2' style='display: none;margin-left: 23px;'>*如您选择申办各类联名卡金卡/普卡，并勾选同意在符合条件的情形下核发白金卡，若最终我行为您核发白金卡的，则您将无法再享受所选联名卡金卡/普卡的相关权益（东航、国航联名卡除外），请根据您的实际需要进行选择。</b>
+					<b class='pccc_platinumTip3' style="display: none;font-weight: 400;margin-left: 23px;">*如您勾选同意在符合条件的情形下核发白金卡，即视为同意：我行将优先审核您是否符合白金卡的核发条件，若符合将核发白金卡；若不符合，我行将继续评估您是否符合金卡/普卡的核发条件，若符合将核发金卡/普卡。<a class='blue'>收起</a></b>				
+				</div>
+				<br>
+				
+				<div class="declare"><input id="mrm_cbRead" name="Read" type="checkbox" value="" class="checkbox" >
+					<span>本人已阅读并同意遵守与申领贵行信用卡相关的重要提示、申领声明、业务章程、领用合约、收费表、勾选信用卡业务功能及增值服务的业务条款细则等法律文件，本人不可撤销地授权贵行在信用卡申领关系建立和存续期间，随时向中国人民银行个人信用信息基础数据库和其他合法设立的征信机构查询本人在其中的全部信用信息及信用报告。本人同意贵行同时为本人注册交通银行信用卡I买单吧会员账号。 <a dialogopenurl="/applynew/assets/pc/dialog/PCProtocol.html" href="#nogo" id="mrm_btnDjzc" class="blue dialogopen">点击详情</a>
+						<br/><br/>
+						<b style='display: block;'>提示：本栏位一经勾选，即代表您同意申请开立相关信用卡账户并遵守以上链接内所有约定内容。</b>
+					</span>
+				</div>
+				
+				
+				<table width="525" class="mainTable quickTable" id="pccc_veContent">
+					<tr>
+						<td colspan="2" id="pccc_tdsub">
+							<button type="submit" class="btn" >
+								<span>确认以上信息</span><em><i></i></em>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" height="30">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="mainTitleTip">温馨提示：您只需符合以下任意一项条件即可申请</p>
+							<div style="color:#999999;font-size:12px">
+								1. 有稳定的工作，连续缴纳三金，且从未持有交通银行信用卡主卡。<br/>
+								2. 有大专或以上学历，且从未持有交通银行信用卡主卡。<br/>
+								3. 您在交通银行有一定的资产，且从未持有交通银行信用卡主卡。</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<p class="mainTitleTip"><b>特别提醒:</b></p>
+								<div style="font-size:12px">
+									如您本人是“美国个人”(即指美国国籍、美国绿卡持有者或美国长期逗留的外国人)请<u><a id="american_Tip" href="javascript:void(0);" class="blue dialogopen">点击详情</a></u><br/></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<aside class="siderBar fr">
+					<div class="clearfix">
+						<div class="new_platinum_other">
+							<h3 class="mainTitle fl">您也可以选择其他卡片</h3>
+							<a id="mrm_btnAgainSel" name="moreChoose" class="btn smallBtn fr" monitor><span>更多选择</span><em></em></a>
+						</div>
+						<input name="cardId" type="hidden" value="17" id="pccc_cardId"/>
+						<input name="org" type="hidden" value="V" id="pccc_orgCode"/>
+						<input name="platinumPrdId" type="hidden"  id="pccc_platinumPrdId"/>
+						<input type="hidden" value="2" id="apply_platinum_prdId"/>
+					</div>
+					<div class="new_platinum_other"><font color="red" >温馨提示：如您希望申请其他卡片，请先选择您所在的省份/地区后，点击“更多选择”</font></div>
+					<dl id="mrm_divSiderSelect" class="siderCardSelect">
+						<dt>
+							<em id="mrm_emCardTitle">标准信用卡维萨金卡</em> 
+							<span id="mrm_spCardImg" name="imgChooseCard" class="card" monitor>
+								<div class="img">
+									<div>
+										<div class="light"></div>
+										<img src="/applynew/front/apply/imgShow.html?uuid=111b97b8-365f-4962-a46a-cb0dce37a73c" id="pccc_select_img"/ alt="金卡图案">
+									</div>
+								</div>
+							</span>
+						</dt>
+						<dd class="new_platinum_other">
+							<span class="blueTitle">卡组织选择</span> <span id="mrm_spCardType"
+							class="cardTypeselect"> 
+							<a href="#nogo" class="selected"
+							onclick="UpdCardType(this,'visa',1)"> <img
+							src="/applynew/assets/pc/images/blank.gif" class="visa" alt="visa图案"> <i
+							class="icons"></i>
+						</a>
+						<a href="#nogo" 
+						onclick="UpdCardType(this,'unionpay',1)"> <img
+						src="/applynew/assets/pc/images/blank.gif" class="unionpay" alt="银联图案"> <i
+						class="icons"></i>
+					</a>
+				</span>
+			</dd>
+		</dl>
+		<dl class="siderNews" id="mrm_divGoldTip">
+			<dt class="blueTitle">温馨提示</dt>
+			<dd>
+				<span class="dashTip">如本行暂不能为您核卡贷记卡金卡，本行将视为贷记卡普通卡申请进行审批。</span>
+			</dd>
+		</dl>
+		<!-- 会员号显示与隐藏 -->
+		<label class="siderSelectItem new_platinum_other" id="mrm_lblGoldTerm" style="display:none;"> 
+			<input name="" type="checkbox" value="" id="pccc_memberInfo" class="checkbox fl" /> 
+			<span class="blue fl" id="pccc_memberContent"></span>
+		</label>
+
+		<dl class="siderNews new_platinum_other" style="display:none;" id="pccc_othermember">
+			<dt class="blueTitle" id="memberCardNumdt">
+
+			</dt>
+			<dd>
+				<input name="applyMemberNo" type="text" class="text longText"
+				id="mrm_inputMemberNumber" maxlength="19"> 
+				<input type="hidden" value="" id="pccc_memberRule"/>	
+				<span class="textTip" id="textTipSpan1">如没有填写卡号，系统将为您自动生成一个</span>
+			</dd>
+			<dd class="memberNum" id="mrm_MemberNumber" style="display: none">
+				<div id="mrm_memberNumDIV"></div><span class="red"></span>
+			</dd>
+		</dl>
+		<input type="hidden" id="defViasEMVImg" value="https://creditcardapp.bankcomm.com/content/dam/pc/ecardresource/imgs/visaEmv.jpg"/>
+		<input type="hidden" id="defMasterEMVImg" value="https://creditcardapp.bankcomm.com/content/dam/pc/ecardresource/imgs/masterEmv.jpg"/>
+		<div class="radioItems new_platinum_other" id="addEMVInfo" >
+			<dl class="siderNews">
+				<dt class="blueTitle">为便于您境外用卡，建议您同时加办交通银行环球卡，立即办卡享优惠期内免年费，100美金境外刷卡金，免1.5%外币转换费等多重权益。</dt>
+			</dl>
+			<div id="showVisaEmv" class="new_platinum_other"  style="display:none;">
+				<div class="radioStyle" id="radio_VIS" visa_pic=https://creditcardapp.bankcomm.com/content/dam/pc/ecardresource/imgs/visaEmv.jpg></div>
+				<div class="icon_img"></div>
+			</div>
+			<div id="showMasterEmv" class="new_platinum_other" >
+				<div class="radioStyle" id="radio_Master" master_pic="/applynew/front/apply/imgShow.html?uuid=f36f4d3c-f2f1-403b-8ef7-26f6ddafab79"></div>  
+				<div class="icon_img1"></div>
+			</div>
+			<img class="imgSelect new_platinum_other master_emv_pic" id="showEMVImage" src=/applynew/front/apply/imgShow.html?uuid=f36f4d3c-f2f1-403b-8ef7-26f6ddafab79 >
+			<input type="hidden" name="emvOrgType" id="emvOrgType"/>
+		</div>		
+	</aside>
+</form>
+</section>
+<div id="mrm_moreinfo"></div>
+<div class="dialog1" id="dialog1">
+	<div class="dialogContent1">
+		<from id ="verifyCodeForm">
+			<div class="bottomBtn"> 
+				请填入图形验证码
+				<div class="checkcode">
+					<input class="tabs-input w140 fl" type="text" id="verifyCode" name="verifyCode"  maxlength="5" placeholder="图形验证码">
+					<div class="yzcode-box"> 
+						<img width="130" height="46"  class="yzcode vcode_change vcode" id="vcode"  src="/applynew/CheckCode.svl?v=0.19844836796065535">
+						<div class="yzcode-change tc vcode_change" ><a href="javascript:void(0);" onclick="changvcode();">换一张</a></div> 
+					</div>
+				</div>
+				<a href="javascript:void(0);" class="redBtn_dycode" id="vcode_submit">确定</a> 
+			</div>
+		</from>
+	</div>
+</div>
+<div class="overlay_veryPicture"></div>
+<div class="popup-tip-over disnone" id="popup-tip-over">
+	<div class="head">温馨提示</div>
+	<p class="yongyou">您已经超过60周岁，建议至分行人工办理信用卡申请。</p>
+	<div class="btn-two1 btn-two-over">
+		<div class="backHome1 backHome-over"><a href="http://creditcard.bankcomm.com/content/pccc/index.html">返回首页</a></div>
+		<div class="gongOn1 gongOn-over" id="new_pccc_goOn"><a href="#">继续办理</a></div>
+	</div>
+</div>
+<div class="overlay" style="display:none;" id="pccc_newApplyCard"></div> 
+
+<!-- 白金卡部分条款 -->
+<div class="popup" style="display:none;" id="new_platinum_tips">
+	<div class="head">尊敬的客户</div>
+	<div class="checked">
+		<input id="new_platinum_money_checkbox" type="checkbox"/>
+		<span style='font-weight: bold;'>白金卡主卡年费1,000元/年，将在您激活卡片后收取。</span>
+	</div>
+	<p style='font-weight: bold;'>*白金卡核卡45天内，有积分消费满6笔，即可免除首年年费！次年年费可使用25万积分兑换（除东航、国航白金卡外），用卡达人还有机会获得免年费权益！</p>
+	<p>*白金卡每年为您提供价值超8,000元的增值服务，让您全家出行倍享尊贵、全家生活倍添优惠！</p>
+	<p>*价值2,400元的12次机场贵宾室服务、价值近千元的6次酒后代驾服务、2小时起赔单次最高1,000元的无限次航班延误……</p>
+	<p>*白金卡还可畅享美元消费3倍积分、生日月双倍最高额外赠送100万积分……</p>
+	<p class="special">*满满心意、让您享受尊荣每一刻！</p>
+
+	<div class="buttons" style="margin-top: 28px;">
+		<button type="submit" id="confirm_apply_platinum" class="buriedpoint bnt sureBtn platinumDisabled" name="confirm_apply_platinum" value="1"  style="height:44px;">确定</button>
+		<button type="submit" id="cancel_apply_platinum" class="buriedpoint bnt cancelBtn" name="cancel_apply_platinum" value="0"  style="height:44px;">取消</button>
+	</div>
+</div>
+<div class="overlay_platinum" style="display:none;" id="new_platinum_bg"></div>	
+<footer>
+	<div class="footer">
+		<div id="footbox">
+			<div class="f_copy">
+				© 2013-2014 交通银行版权所有 未经许可不得转载<br><b>服务热线：<em>400-800-9888</em></b>
+			</div>
+			<div class="f_slogan"></div>
+		</div>
+	</div>
+</footer>
+</body></html>
