@@ -1,0 +1,146 @@
+body{
+	margin: 0px;
+}
+.s1_left{
+	float: left;
+	margin-left: 150px;
+}
+.s1_right{
+	float: right;
+	margin-right: 150px;
+}
+pre{
+	font-family: "微软雅黑";
+	margin: 10px 0px 10px 0px;
+	color: #646464;
+}
+a{
+	font-family: "微软雅黑";
+	color: #646464;
+	text-decoration: none;
+}
+a:hover{
+	color: #ff0000;
+}
+a.sp{
+	color: #ff0000;
+}
+.p_a{
+	height: 142px;
+	width: 100%;
+}
+.p_b{
+	position: absolute;
+	width: 560px;
+	top: 65px;
+	margin-left: 12%;
+	height: 100px;
+}
+
+
+
+.Nav{
+	background-color: #266ca0;
+	height: 45px;
+	width: 74%;
+	margin: 0px auto;
+}
+.nav{
+	list-style: none;
+	margin: 0px 0px 0px -40px;
+}
+li{
+	float: left;
+	width: 10%;
+	height: 45px;
+}
+.Nav .nav li a{
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 45px;
+	display: block;
+	line-height: 40px;
+}
+.Nav .nav li a:hover{
+	background-color: #67c2fb;
+}
+.active{
+	background-color: #67c2fb;
+}
+.tip{
+	width: 74%;
+    margin: 0px auto;
+}
+
+
+.main_content{
+	width: 75%;
+	height: auto;
+	padding: 0px;
+	margin: 0px auto;
+	min-width: 1000px;
+}
+.content{
+	width: 100%;
+	min-height: 830px;
+	height: 100%;
+	border: 1px solid #909090;
+}
+.content_title{
+	margin-left: 140px;
+    margin-top: 50px;
+}
+.R_title{
+	font-size: 25px;
+    font-family: "微软雅黑";
+}
+.other_message{
+	width: 75%;
+	margin: 0px auto;
+	border-bottom: 1px solid #909090;
+}
+.o_message{
+	margin-left: 135px;
+}
+.main_message{
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	padding-top: 40px;
+	line-height: 2em;
+}
+.end_message{
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	line-height: 2em;
+	text-align: right;
+	font-family: "微软雅黑";
+}
+.blank{
+	width: 100%;
+    height: 36px;
+    line-height: 36px;
+    clear: both;
+}
+.footer{
+	width: 100%;
+	font-size: 14px;
+}
+.addition_1{
+	width: 74%;
+	margin: 0px auto;
+    background-color: #266ca0;
+    height: 44px;
+    text-align: center;
+}
+.R_addition_1{
+	color: #fff;
+	line-height: 40px;
+}
+.addition_2,.addition_3,.addition_4,.addition_5{
+	width: 100%;
+    text-align: center;
+    height: 20px;
+}

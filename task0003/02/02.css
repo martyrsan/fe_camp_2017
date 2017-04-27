@@ -1,0 +1,27 @@
+ul{
+	list-style: none;
+}
+li.mother_menu{
+    float: left;
+    background-color: #000000;
+    width: 100px;
+}
+.sub_menu{
+    padding: 0px;
+	display: none;
+}
+ul.menu li.mother_menu:hover ul.sub_menu{
+	display: block;
+
+}
+ul.menu li.mother_menu a{
+	font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+}
+ul.menu li.mother_menu a:hover{
+	background-color: red;
+}

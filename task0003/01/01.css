@@ -1,0 +1,28 @@
+body{
+	background-image: url('black.jpg');
+	background-repeat: no-repeat;
+	background-size:100% 225%;
+}
+h1{
+	text-align: center;
+	color: white;
+	font-family: "微软雅黑";
+	padding: 15px;
+	font-size: 35px;
+}
+table{
+	border-collapse: collapse;
+	margin:auto;
+}
+tr{
+	height: 50px;
+}
+td{
+	padding: 10px;
+	background-color: rgba(255, 255, 255,.75);
+}
+th{
+	padding: 10px;
+	background-color: rgba(255, 255, 255,.6);
+	font-family: "微软雅黑"；
+}
