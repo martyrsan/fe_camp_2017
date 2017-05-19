@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task0005</title>
+</head>
+<link rel="stylesheet" type="text/css" href="01.css">
+<body>
+	<div id="figures"></div>
+	<div id="buttons">
+		<button id="button_1">小新</button>
+		<button id="button_2">巴卫</button>
+	</div>
+
+
+	<script>
+		var btn_1=document.getElementById("button_1");
+		var btn_2=document.getElementById("button_2");
+		var figs=document.getElementById("figures");
+
+
+        btn_1.onclick=function switch_1(){
+			document.body.style.backgroundImage= "url(images/xx-bg.png)";
+			figs.style.backgroundImage= "url(images/xx.jpg)";
+			btn_1.style.backgroundImage= "url(images/btn-blue.png)";
+			btn_1.style.color= "#000000";
+			btn_2.style.color= "#73ebdb";
+			btn_2.style.backgroundImage= "url(images/btn-gray.png)";
+		}
+		btn_2.onclick=function switch_2(){
+			document.body.style.backgroundImage= "url(images/bw-bg.png)";
+			figs.style.backgroundImage= "url(images/bw.png)";
+			btn_1.style.backgroundImage= "url(images/btn-gray.png)";
+			btn_1.style.color= "#73ebdb";
+			btn_2.style.color= "#000000";
+			btn_2.style.backgroundImage= "url(images/btn-blue.png)";
+		}
+	</script>
+</body>
+</html>
