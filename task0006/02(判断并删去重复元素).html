@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02</title>
+</head>
+<script type="text/javascript">
+	function checkout(x){
+		var arr=[];
+		var temp='';
+		var word='';
+	    var count=0;
+        for (var i = 0; i < x.length; i++) {
+            temp = x[i];
+			if (temp==','||temp=='，') {
+				word=compare(word,arr);
+				arr[count]=word;
+				word='';
+				count++;	
+			}
+			else if(i==x.length-1){
+				word+=x[x.length-1];  
+				word=compare(word,arr);
+				arr[count]=word;
+				word=''; 
+			}
+			else
+				word+=temp;
+		}
+		document.getElementById('result').innerHTML=arr;
+	}
+	function compare(x,a){
+		for (var i = 0; i < a.length; i++) {
+			if (x==a[i]) {
+				x='';
+				break;
+			}
+		}
+		return x;
+	}
+</script>
+<body>
+	<div>
+		<form>
+			<div>
+				<label for="hobby">请输入您的爱好(请用逗号分隔)</label>
+				<input id="hobby" type="text" name="hobbies">
+			</div>
+			<div>
+				<button onclick="checkout(document.getElementById('hobby').value)" type="button">检验</button>
+			</div>
+			<div id="result"></div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01</title>
+</head>
+<script type="text/javascript">
+	function validate(x){
+        x=x.replace(/-/g,""); 
+        x=x.toUpperCase();
+        if (x.length==20) {
+        	alert('返回：' + x);
+        }
+        else
+        	alert('异常：无效的密码格式');
+	}
+</script>
+<body>
+	<div>
+		<form>
+			<div>
+				<label for="vcode">请输入20位验证码</label>
+				<input id="vcode" type="text" name="verification_code">
+			</div>
+			<div>
+				<button onclick="validate(document.getElementById('vcode').value)">验证</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
